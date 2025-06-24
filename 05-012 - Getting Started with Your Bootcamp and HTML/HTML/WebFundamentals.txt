@@ -1,0 +1,89 @@
+1. What is the World Wide Web?
+
+The World Wide Web (WWW), is a vast system of interconnected documents and
+resources, linked by hyperlinks and accessible over the internet. The web is
+built on the HTTP (Hypertext Transfer Protocol) and HTTPS (HTTP Secure)
+protocols, which allow web browsers to retrieve and display web pages from
+servers. Users interact with the web through browsers, which render pages based
+on the HTML (Hypertext Markup Language) code they contain. The web enables
+users to navigate between pages via links, access various types of content, and
+interact with online applications and services.
+
+2. Explain the Functional Differences Between a Web Application’s Front End and
+   Back End
+
+The front end of a web application is the part that users interact with
+directly. It includes everything the user experiences in their browser, such as
+the design, layout, text, images, buttons, and overall user interface (UI). The
+front end is typically built using HTML for structure, CSS (Cascading Style
+Sheets) for styling, and JavaScript for interactivity. It’s where the user
+input is captured and displayed.
+
+The back end is the part of the web application that runs on a server. It
+handles the business logic, database interactions, user authentication, server
+configuration, and everything that happens "behind the scenes" to make the
+front end functional. The back end is typically developed using server-side
+languages like Node.js, Python, Ruby, or Java, and involves working with
+databases (like MySQL, MongoDB) to store and retrieve data, and server
+frameworks to manage requests and responses.
+
+
+3. Describe What Occurs on the Back End During a Web Interaction
+   (Using the "Google Query Example")
+
+Performing a Google search steps.
+
+- A user types a query into Google's search bar and presses "Enter." This
+  action sends the query to Google's server.
+
+- On the back end, the web server receives the query and passes it to the
+  application logic responsible for processing search requests.
+
+- The application logic processes the query.
+  This might involve:
+
+  - Parsing the query: Understanding what the user is searching for.
+  - Accessing the Search Index: The query is matched against an indexed
+    database of websites and content that Google has previously crawled and
+    indexed.
+  - Ranking Results: The results are ranked based on relevance, using Google's
+    proprietary algorithms.
+  - Database Interaction: The back end may interact with various databases or
+    data storage systems to retrieve relevant results. These databases contain
+    information about web pages, keywords, user data, etc.
+
+- Once the relevant search results are identified and ranked, the back end
+  generates a response, typically in the form of an HTML document.
+
+- The server sends the HTML document back to the user's browser, where it is
+  rendered as a web page with search results.
+
+- The user sees the search results page and can interact with it by clicking on
+  links, refining the search, etc.
+
+This whole process, from the user's input to displaying the results, happens in
+milliseconds and involves complex back-end processes, including data retrieval,
+algorithmic processing, and communication between multiple servers and
+databases.
+
+4. What is the MERN Stack?
+
+The MERN stack is a popular full-stack development framework used for building
+web applications. It is an acronym for the four key technologies used in the
+stack (MongoDB Express.js React.js Node.js):
+
+- MongoDB: A NoSQL database that stores data in a flexible, JSON-like format.
+  It is used as the database layer to store and retrieve data.
+
+- Express.js: A web application framework for Node.js that simplifies the
+  development of server-side logic. It acts as the middle layer, managing HTTP
+  requests and routing.
+
+- React.js: A JavaScript library developed by Facebook for building user
+  interfaces, particularly single-page applications (SPAs). React is
+  responsible for the front-end part of the application, allowing developers to
+  create reusable UI components.
+
+- Node.js: A JavaScript runtime environment that allows developers to run
+  JavaScript code on the server side. It provides the back-end environment
+  where the application runs and handles requests.

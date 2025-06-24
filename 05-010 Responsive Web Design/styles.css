@@ -1,0 +1,155 @@
+/* Removing default padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* CSS variables for repeated values */
+:root {
+  --main-colour: #1c1c1c;
+}
+
+/*Styling of body and headings  */
+body {
+  background-color: var(--main-colour);
+  color: whitesmoke;
+  font-family: ui-sans-serif, system-ui, sans-serif, Color;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 0.25em;
+}
+
+h3 {
+  font-size: 0.75rem;
+}
+
+/* Styling of grid container */
+.elements-parent {
+  display: grid;
+  grid-template: repeat(9, minmax(0, 1fr)) / repeat(18, minmax(0, 1fr));
+  gap: 0.3125em;
+  margin: 1.25em;
+}
+
+/* Base styles for each periodic table element */
+.elements-child {
+  text-align: center;
+  overflow: hidden;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.elements-child:hover {
+  opacity: 1;
+}
+
+.elements-child > p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.elements-child > p:nth-of-type(2n) {
+  font-size: 0.5rem;
+  padding: 0.5em 0;
+}
+
+/* Whitespace in periodic table */
+.first-row-whitespace {
+  grid-column: 2 /18;
+}
+
+.second-row-whitespace1 {
+  grid-column: 3 /7;
+}
+
+.second-row-whitespace2 {
+  grid-column: 8/13;
+}
+
+.third-row-whitespace {
+  grid-column: 3 /13;
+}
+
+.bottom-rows-whitespace {
+  grid-column: 3/3;
+  grid-row: 6/10;
+}
+.bottom-rows-whitespace2 {
+  grid-column: 1/3;
+  grid-row: 8/10;
+}
+
+/* Styling for each element group */
+.noble-gas {
+  background-color: rgb(77, 46, 0);
+}
+
+.alkaline-earth-metal {
+  background-color: rgb(16, 16, 64);
+}
+
+.post-transition-metal {
+  background-color: rgb(0, 77, 0);
+}
+
+.transition-metal {
+  background-color: rgb(8, 28, 60);
+}
+
+.halogen {
+  background-color: rgb(77, 77, 0);
+}
+
+.lanthanide {
+  background-color: rgb(0, 89, 89);
+}
+
+.actinide {
+  background-color: rgb(22, 89, 67);
+}
+
+.alkali-metal {
+  background-color: rgb(56, 4, 4);
+}
+
+.nonmetal {
+  background-color: rgb(64, 64, 4);
+}
+
+.metalloid {
+  background-color: rgb(36, 48, 4);
+}
+
+.table-image {
+  display: none;
+}
+
+/* setting the max-width the 100% makes the image responsive to changing screen sizes */
+img {
+  max-width: 100%;
+}
+
+/* MEDIA QUERIES */
+/* Periodic table is replaced by an image of the periodic table */
+@media screen and (max-width: 750px) {
+  .table-image {
+    display: block;
+  }
+  .elements-parent {
+    display: none;
+  }
+}
+/* one breakpoint which triggers a change in the styling of the web page. */
+@media screen and (max-width: 850px) {
+  body {
+    background-color: teal;
+  }
+
+  h1 {
+    color: var(--main-colour);
+  }
+}
