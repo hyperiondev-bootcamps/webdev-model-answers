@@ -1,0 +1,88 @@
+.footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+}
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__top {
+  text-align: center;
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 20px;
+}
+.footer__middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+.footer__column {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer__column h4 {
+  margin-bottom: 10px;
+}
+.footer__links {
+  list-style: none;
+}
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+}
+.footer__subscribe {
+  margin-bottom: 1rem;
+}
+.footer__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__input {
+  border: 1px solid #e0e0e0;
+  border-right: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  outline: none;
+}
+.footer__input:focus {
+  border-color: #333;
+}
+.footer__button {
+  background-color: #1c683c;
+  color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  border: none;
+  cursor: pointer;
+}
+.footer__button:hover {
+  background-color: #1f5c29;
+}
+.footer__social {
+  display: flex;
+  justify-content: center;
+}
+.footer__social a {
+  margin: 0 10px;
+}
+.footer__social a img {
+  width: 24px;
+}

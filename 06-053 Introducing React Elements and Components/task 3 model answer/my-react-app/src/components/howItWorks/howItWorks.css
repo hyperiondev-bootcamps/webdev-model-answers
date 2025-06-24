@@ -1,0 +1,57 @@
+.how__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 3rem;
+}
+.how__container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 3rem;
+}
+.how__choose {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.how__choose--img {
+  height: 12rem;
+}
+.how__choose--p {
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+.how__deliver {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.how__deliver--img {
+  height: 12rem;
+}
+.how__deliver--p {
+  width: 60%;
+  text-align: center;
+  color: black;
+}
+.how__cook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.how__cook--img {
+  height: 12rem;
+}
+.how__cook--p {
+  width: 60%;
+  text-align: center;
+  color: black;
+}

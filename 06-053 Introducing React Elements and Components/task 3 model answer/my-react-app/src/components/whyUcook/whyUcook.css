@@ -1,0 +1,39 @@
+.why__container {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap; /* Allows cards to wrap into a new row */
+  justify-content: center; /* Center cards horizontally */
+  margin-top: 3rem;
+  text-align: center; /* Space above the container */
+}
+
+.why__header {
+  margin-top: 3rem;
+  color: black;
+  font-size: 2rem;
+  text-align: center; /* Center the header text */
+}
+
+.why__cards {
+  display: flex; /* Enable flexbox for the card container */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  justify-content: center; /* Center cards horizontally */
+  gap: 1rem; /* Space between cards */
+  flex: 1 1 calc(33.333% - 2rem); /* This allows 3 cards per row */
+  box-sizing: border-box;
+
+  margin: 0 auto; /* Center the container itself */
+}
+
+.card {
+  flex: 1 1 30%; /* Allow cards to take up to 30% of the container's width */
+  max-width: 300px; /* Limit the maximum width of each card */
+  margin: 0.5rem; /* Add margin around cards */
+  display: flex; /* Use flex for card layout */
+  flex-direction: column; /* Stack card content vertically */
+  align-items: center; /* Center items inside each card */
+  background: #f9f9f9; /* Optional: Background color */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  border-radius: 8px; /* Optional: Rounded corners */
+  padding: 1rem; /* Optional: Internal padding */
+}
