@@ -1,40 +1,30 @@
+import React from 'react';
 import RecommendationCard from "./RecommendationCard";
 
-function RecommendationPanel() {
-  const recommendations = [
-    {
-      id: 1,
-      title: "React State Management",
-      description:
-        "Review how useState manages dynamic application data."
-    },
-    {
-      id: 2,
-      title: "Async JavaScript",
-      description:
-        "Learn how async and await work with APIs."
-    },
-    {
-      id: 3,
-      title: "Responsible AI UX",
-      description:
-        "Understand transparency and trust in AI interfaces."
-    }
-  ];
 
-  return (
-    <section className="recommendations">
-      <h2>Recommended Learning Resources</h2>
+export default function RecommendationPanel(){// The static mock data required by the task instructions
+    const recommendations = [
+        {
+            id: 1,
+            title: "React State Management",
+            description: "Review how useState helps manage changing interface data."
+        },
+        {
+            id: 2,
+            title: "Async JavaScript",
+            description: "Revise how async and await are used when working with APIs."
+        }
+    ];
 
-      {recommendations.map((item) => (
-        <RecommendationCard
-          key={item.id}
-          title={item.title}
-          description={item.description}
-        />
-      ))}
-    </section>
-  );
-}
-
-export default RecommendationPanel;
+    return (
+        <div style={{ marginTop: "30px", borderTop: "2px solid #e2e8f0", paddingTop: "20px" }}>
+            <h3>Suggested Learning Resources</h3>
+            {recommendations.map((item) => (
+                <RecommendationCard 
+                    key={item.id} 
+                    title={item.title} 
+                    description={item.description} 
+                />
+            ))}
+        </div>
+    );};

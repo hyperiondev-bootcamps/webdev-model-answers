@@ -1,5 +1,6 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import RecommendationPanel from "./components/RecommendationPanel";
+
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -21,8 +22,10 @@ function App() {
     setResponse("");
 
     try {
-      const apiUrl =
-        `https://text.pollinations.ai/${encodeURIComponent(prompt)}`;
+      // Add a specific model selection parameter to the end of the template string
+      const apiUrl = 
+      `https://text.pollinations.ai/${encodeURIComponent(prompt)}`;
+     
 
       const result = await fetch(apiUrl);
 
